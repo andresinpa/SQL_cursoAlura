@@ -1,0 +1,19 @@
+SELECT * FROM tabla_de_productos;
+
+SELECT * FROM tabla_de_productos WHERE SABOR = "MANGO" AND TAMANO = '470 ML';
+
+SELECT * FROM tabla_de_productos WHERE SABOR = "MANGO" OR TAMANO = '470 ML';
+
+SELECT * FROM tabla_de_productos WHERE NOT (SABOR = "MANGO") AND TAMANO = '470 ML';
+
+SELECT * FROM tabla_de_productos WHERE NOT (SABOR = "MANGO" AND TAMANO = '470 ML');
+
+SELECT * FROM tabla_de_productos WHERE SABOR IN ("MANGO", "uVA");
+
+SELECT * FROM tabla_de_clientes WHERE CIUDAD IN ("CIUDAD DE MEXICO", 'GUADALAJARA');
+
+SELECT * FROM tabla_de_clientes WHERE CIUDAD IN ("CIUDAD DE MEXICO", 'GUADALAJARA') AND EDAD > 21;
+
+SELECT * FROM tabla_de_clientes WHERE CIUDAD IN ("CIUDAD DE MEXICO", 'GUADALAJARA') AND (EDAD between 20 AND 40);
+
+SELECT * FROM tabla_de_clientes WHERE NOMBRE LIKE "%EZ";
